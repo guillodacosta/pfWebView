@@ -7,11 +7,47 @@
 //
 
 import UIKit
+#if canImport(SwiftUI)
+import SwiftUI
+#endif
 
 public typealias PollfishWebViewClose = (String, String, String) -> Void
 public typealias PollfishWebViewError = (Error) -> Void
 public typealias PollfishWebViewOpen = () -> ()
 public typealias PollfishWebViewReady = () throws -> ()
+
+//@available(iOS 13, *)
+//public struct WrapperView {
+//
+//    var view: AnyView
+//
+//    public init(view: AnyView) {
+//        self.view = view
+//    }
+//
+//}
+
+@available(iOS 13, *)
+public struct WrapperView: UIViewControllerRepresentable {
+    
+    let navigationController = UINavigationController()
+    var view: AnyView?
+    
+    public init(view: AnyView) {
+        self.view = view
+    }
+    
+    public func makeUIViewController(context: UIViewControllerRepresentableContext<WrapperView>) -> UIViewController {
+        let viewController = UIHostingController(rootView: view)
+        navigationController.addChild(viewController)
+        return viewController
+    }
+    
+    public func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<WrapperView>) {
+        
+    }
+
+}
 
 public enum PollfishWebViewErrorType: Error {
     case BadParams
@@ -49,6 +85,7 @@ public class PollfishWebView {
     private init() {}
     
     @discardableResult
+    @available(iOS 10, *)
     public func load(viewController: UIViewController,
                      params: PollfishWebViewParams,
                      onClose: @escaping PollfishWebViewClose,
@@ -60,6 +97,23 @@ public class PollfishWebView {
         self.openClosure = onOpen
         
         try setupWebview(viewController: viewController, params: params)
+        
+        return PollfishWebView.shared
+    }
+    
+    @discardableResult
+    @available(iOS 13, *)
+    public func load(view swiftUIView: WrapperView,
+                     params: PollfishWebViewParams,
+                     onClose: @escaping PollfishWebViewClose,
+                     onError: @escaping PollfishWebViewError,
+                     onOpen: @escaping PollfishWebViewOpen
+                     ) throws -> PollfishWebView {
+        self.closeClosure = onClose
+        self.errorClosure = onError
+        self.openClosure = onOpen
+        
+        try setupWebview(swiftUIView: swiftUIView, params: params)
         
         return PollfishWebView.shared
     }
@@ -84,12 +138,33 @@ private extension PollfishWebView {
             
         rootViewController.interactor = interactor
         interactor.preLoad(whenFinishLoad: {
-            try self.startWebview(viewController: viewController)
+            try self.startWebview(uiViewController: viewController)
         })
     }
     
-    func startWebview(viewController: UIViewController) throws {
-        guard let navigationController = viewController.navigationController else {
+    @available(iOS 13, *)
+    func setupWebview(swiftUIView: WrapperView, params: PollfishWebViewParams) throws {
+        let localStore = PollfishWebViewLocalStore()
+        let webViewFactory = PollfishWebViewFactory()
+        let presenter = PollfishWebViewPresenter(viewController: rootViewController)
+        let worker = PollfishWebViewWorker(webviewStore: localStore, webViewFactory: webViewFactory)
+        let interactor = PollfishWebViewInteractor(
+            onClose: closeClosure,
+            onError: errorClosure,
+            onOpen: openClosure,
+            params: params,
+            presenter: presenter,
+            worker: worker
+        )
+            
+        rootViewController.interactor = interactor
+        interactor.preLoad(whenFinishLoad: {
+            try self.startWebview(wrapperView: swiftUIView)
+        })
+    }
+    
+    func startWebview(uiViewController: UIViewController) throws {
+        guard let navigationController = uiViewController.navigationController else {
             throw PollfishWebViewErrorType.EmptyNavigationController
         }
         let transition: CATransition = CATransition()
@@ -106,4 +181,23 @@ private extension PollfishWebView {
         navigationController.setNavigationBarHidden(true, animated: false)
         navigationController.pushViewController(rootViewController, animated: false)
     }
+    
+    @available(iOS 13, *)
+    func startWebview(wrapperView: WrapperView) throws {
+        let navigationController = wrapperView.navigationController
+        let transition: CATransition = CATransition()
+        if navigationController.topViewController == rootViewController {
+            navigationController.popViewController(animated: false)
+        }
+        
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: .easeIn)
+        transition.type = .push
+        transition.subtype = .fromRight
+        navigationController.view.layer.add(transition, forKey: kCATransition)
+        navigationController.modalPresentationStyle = .fullScreen
+        navigationController.setNavigationBarHidden(true, animated: false)
+        navigationController.pushViewController(rootViewController, animated: false)
+    }
 }
+
