@@ -8,9 +8,13 @@ let package = Package(
     platforms: [.iOS(.v10)],
     products: [
         .library(name: "PollfishWebView", targets: ["PollfishWebView"]),
+        .library(name: "PollfishWebViewSwiftUI", targets: ["PollfishWebViewSwiftUI"]),
     ],
     targets: [
-        .target(name: "PollfishWebView", dependencies: []),
+        .target(name: "PollfishWebView", dependencies: [], exclude: ["SwiftUI"]),
+//        .target(name: "PollfishWebViewSwiftUI", dependencies: ["PollfishWebView"]),
+//        .target(name: "PollfishWebViewSwiftUI", dependencies: ["PollfishWebView"], sources: ["SwiftUI"]),
+        .target(name: "PollfishWebViewSwiftUI", dependencies: ["PollfishWebView"], path: "Sources/PollfishWebView/SwiftUI"),
         .testTarget(name: "WebPollfishSupportTests", dependencies: ["PollfishWebView"]),
     ]
     
