@@ -32,21 +32,6 @@ class ViewController: UIViewController {
             print("Error on PollfishWebView: \(error).")
         }
         
-
-        //        let instOne = PollfishWebView.shared
-        //        let instTwo = PollfishWebView.shared
-        //        let vc = UIViewController()
-        //        vc.title = "ES_ESTE"
-        
-        //        instOne.load(viewController: vc, params: PollfishWebViewParams(paramOne: "", paramTwo: "", paramThree: "", paramFour: "", paramFive: ""))
-        //        instTwo
-        //            .load(viewController: vc, params: PollfishWebViewParams(paramOne: "", paramTwo: "", paramThree: "", paramFour: "", paramFive: ""))
-        //            .onClose({ (param1, param2, param3) in
-        //                print(param1)
-        //            })
-        //            .onOpen({
-        //
-        //            })
     }
 
 

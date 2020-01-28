@@ -16,7 +16,7 @@ protocol PollfishWebViewStore {
     func getOrigin() -> String?
 }
 
-class PollfishWebViewLocalStore: PollfishWebViewStore {
+public class PollfishWebViewLocalStore: PollfishWebViewStore {
     
     public init() {}
     

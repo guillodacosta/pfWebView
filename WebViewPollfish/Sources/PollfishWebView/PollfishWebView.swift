@@ -7,11 +7,25 @@
 //
 
 import UIKit
+#if canImport(SwiftUI)
+import SwiftUI
+#endif
 
 public typealias PollfishWebViewClose = (String, String, String) -> Void
 public typealias PollfishWebViewError = (Error) -> Void
 public typealias PollfishWebViewOpen = () -> ()
 public typealias PollfishWebViewReady = () throws -> ()
+
+@available(iOS 13, *)
+public struct WrapperView {
+    
+    var view: AnyView
+    
+    public init(view: AnyView) {
+        self.view = view
+    }
+    
+}
 
 public enum PollfishWebViewErrorType: Error {
     case BadParams
@@ -49,6 +63,7 @@ public class PollfishWebView {
     private init() {}
     
     @discardableResult
+    @available(iOS 10, *)
     public func load(viewController: UIViewController,
                      params: PollfishWebViewParams,
                      onClose: @escaping PollfishWebViewClose,
@@ -60,6 +75,23 @@ public class PollfishWebView {
         self.openClosure = onOpen
         
         try setupWebview(viewController: viewController, params: params)
+        
+        return PollfishWebView.shared
+    }
+    
+    @discardableResult
+    @available(iOS 13, *)
+    public func load(view swiftUIView: WrapperView,
+                     params: PollfishWebViewParams,
+                     onClose: @escaping PollfishWebViewClose,
+                     onError: @escaping PollfishWebViewError,
+                     onOpen: @escaping PollfishWebViewOpen
+                     ) throws -> PollfishWebView {
+        self.closeClosure = onClose
+        self.errorClosure = onError
+        self.openClosure = onOpen
+        
+        try setupWebview(viewController: UIHostingController(rootView: swiftUIView.view), params: params)
         
         return PollfishWebView.shared
     }
@@ -107,3 +139,4 @@ private extension PollfishWebView {
         navigationController.pushViewController(rootViewController, animated: false)
     }
 }
+
