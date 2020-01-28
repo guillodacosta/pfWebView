@@ -14,6 +14,14 @@ Library to load a wkwebview in whichever view.
 - [x] Send messages to caller when the device is turned.
 - [x] Send messages to caller when the webview is open/closed.
 
+
+### How to install
+
+- [x] Download pfLibrary
+- [x] Import `WebViewPollfish` to your target
+
+- [x] alternative you can install this repository with `SPM`
+
 ### How to use
 
 You need add the property `Pollfish_Url` in your main .plist file of type `String` setting the URL as value 
