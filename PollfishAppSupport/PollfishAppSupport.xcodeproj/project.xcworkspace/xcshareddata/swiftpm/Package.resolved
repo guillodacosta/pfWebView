@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PollfishWebView",
+        "repositoryURL": "https://github.com/guillodacosta/pfWebview.git",
+        "state": {
+          "branch": "master",
+          "revision": "582960396a4d2d44b524384737a2bb29b9efbb32",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

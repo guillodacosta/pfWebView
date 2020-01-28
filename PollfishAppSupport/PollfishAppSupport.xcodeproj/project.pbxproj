@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D76DB4D623DD7AD000ABF09C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76DB4D523DD7AD000ABF09C /* AppDelegate.swift */; };
+		D76DB4D823DD7AD000ABF09C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76DB4D723DD7AD000ABF09C /* SceneDelegate.swift */; };
+		D76DB4DA23DD7AD000ABF09C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76DB4D923DD7AD000ABF09C /* ViewController.swift */; };
+		D76DB4DD23DD7AD000ABF09C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76DB4DB23DD7AD000ABF09C /* Main.storyboard */; };
+		D76DB4DF23DD7AD100ABF09C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76DB4DE23DD7AD100ABF09C /* Assets.xcassets */; };
+		D76DB4E223DD7AD100ABF09C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D76DB4E023DD7AD100ABF09C /* LaunchScreen.storyboard */; };
+		D76DB4ED23DD7AD100ABF09C /* PollfishAppSupportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76DB4EC23DD7AD100ABF09C /* PollfishAppSupportTests.swift */; };
+		D76DB4F823DD7AD100ABF09C /* PollfishAppSupportUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76DB4F723DD7AD100ABF09C /* PollfishAppSupportUITests.swift */; };
+		D7FFB70923DFCEE600623BAE /* PollfishWebView in Frameworks */ = {isa = PBXBuildFile; productRef = D7FFB70823DFCEE600623BAE /* PollfishWebView */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D76DB4E923DD7AD100ABF09C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76DB4CA23DD7AD000ABF09C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76DB4D123DD7AD000ABF09C;
+			remoteInfo = PollfishAppSupport;
+		};
+		D76DB4F423DD7AD100ABF09C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76DB4CA23DD7AD000ABF09C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D76DB4D123DD7AD000ABF09C;
+			remoteInfo = PollfishAppSupport;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D76DB4D223DD7AD000ABF09C /* PollfishAppSupport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollfishAppSupport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76DB4D523DD7AD000ABF09C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D76DB4D723DD7AD000ABF09C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D76DB4D923DD7AD000ABF09C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D76DB4DC23DD7AD000ABF09C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D76DB4DE23DD7AD100ABF09C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D76DB4E123DD7AD100ABF09C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D76DB4E323DD7AD100ABF09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76DB4E823DD7AD100ABF09C /* PollfishAppSupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollfishAppSupportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76DB4EC23DD7AD100ABF09C /* PollfishAppSupportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollfishAppSupportTests.swift; sourceTree = "<group>"; };
+		D76DB4EE23DD7AD100ABF09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76DB4F323DD7AD100ABF09C /* PollfishAppSupportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollfishAppSupportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76DB4F723DD7AD100ABF09C /* PollfishAppSupportUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollfishAppSupportUITests.swift; sourceTree = "<group>"; };
+		D76DB4F923DD7AD100ABF09C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7FFB70623DFCEB100623BAE /* WebViewPollfish */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WebViewPollfish; path = ../WebViewPollfish; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D76DB4CF23DD7AD000ABF09C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7FFB70923DFCEE600623BAE /* PollfishWebView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76DB4E523DD7AD100ABF09C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76DB4F023DD7AD100ABF09C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D76DB4C923DD7AD000ABF09C = {
+			isa = PBXGroup;
+			children = (
+				D76DB4D423DD7AD000ABF09C /* PollfishAppSupport */,
+				D76DB4EB23DD7AD100ABF09C /* PollfishAppSupportTests */,
+				D76DB4F623DD7AD100ABF09C /* PollfishAppSupportUITests */,
+				D76DB4D323DD7AD000ABF09C /* Products */,
+				D76DB50523DD7C6000ABF09C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D76DB4D323DD7AD000ABF09C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D76DB4D223DD7AD000ABF09C /* PollfishAppSupport.app */,
+				D76DB4E823DD7AD100ABF09C /* PollfishAppSupportTests.xctest */,
+				D76DB4F323DD7AD100ABF09C /* PollfishAppSupportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D76DB4D423DD7AD000ABF09C /* PollfishAppSupport */ = {
+			isa = PBXGroup;
+			children = (
+				D76DB4D523DD7AD000ABF09C /* AppDelegate.swift */,
+				D76DB4D723DD7AD000ABF09C /* SceneDelegate.swift */,
+				D76DB4D923DD7AD000ABF09C /* ViewController.swift */,
+				D76DB4DB23DD7AD000ABF09C /* Main.storyboard */,
+				D76DB4DE23DD7AD100ABF09C /* Assets.xcassets */,
+				D76DB4E023DD7AD100ABF09C /* LaunchScreen.storyboard */,
+				D76DB4E323DD7AD100ABF09C /* Info.plist */,
+			);
+			path = PollfishAppSupport;
+			sourceTree = "<group>";
+		};
+		D76DB4EB23DD7AD100ABF09C /* PollfishAppSupportTests */ = {
+			isa = PBXGroup;
+			children = (
+				D76DB4EC23DD7AD100ABF09C /* PollfishAppSupportTests.swift */,
+				D76DB4EE23DD7AD100ABF09C /* Info.plist */,
+			);
+			path = PollfishAppSupportTests;
+			sourceTree = "<group>";
+		};
+		D76DB4F623DD7AD100ABF09C /* PollfishAppSupportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D76DB4F723DD7AD100ABF09C /* PollfishAppSupportUITests.swift */,
+				D76DB4F923DD7AD100ABF09C /* Info.plist */,
+			);
+			path = PollfishAppSupportUITests;
+			sourceTree = "<group>";
+		};
+		D76DB50523DD7C6000ABF09C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7FFB70623DFCEB100623BAE /* WebViewPollfish */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D76DB4D123DD7AD000ABF09C /* PollfishAppSupport */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76DB4FC23DD7AD100ABF09C /* Build configuration list for PBXNativeTarget "PollfishAppSupport" */;
+			buildPhases = (
+				D76DB4CE23DD7AD000ABF09C /* Sources */,
+				D76DB4CF23DD7AD000ABF09C /* Frameworks */,
+				D76DB4D023DD7AD000ABF09C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PollfishAppSupport;
+			packageProductDependencies = (
+				D7FFB70823DFCEE600623BAE /* PollfishWebView */,
+			);
+			productName = PollfishAppSupport;
+			productReference = D76DB4D223DD7AD000ABF09C /* PollfishAppSupport.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D76DB4E723DD7AD100ABF09C /* PollfishAppSupportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76DB4FF23DD7AD100ABF09C /* Build configuration list for PBXNativeTarget "PollfishAppSupportTests" */;
+			buildPhases = (
+				D76DB4E423DD7AD100ABF09C /* Sources */,
+				D76DB4E523DD7AD100ABF09C /* Frameworks */,
+				D76DB4E623DD7AD100ABF09C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76DB4EA23DD7AD100ABF09C /* PBXTargetDependency */,
+			);
+			name = PollfishAppSupportTests;
+			productName = PollfishAppSupportTests;
+			productReference = D76DB4E823DD7AD100ABF09C /* PollfishAppSupportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D76DB4F223DD7AD100ABF09C /* PollfishAppSupportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76DB50223DD7AD100ABF09C /* Build configuration list for PBXNativeTarget "PollfishAppSupportUITests" */;
+			buildPhases = (
+				D76DB4EF23DD7AD100ABF09C /* Sources */,
+				D76DB4F023DD7AD100ABF09C /* Frameworks */,
+				D76DB4F123DD7AD100ABF09C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D76DB4F523DD7AD100ABF09C /* PBXTargetDependency */,
+			);
+			name = PollfishAppSupportUITests;
+			productName = PollfishAppSupportUITests;
+			productReference = D76DB4F323DD7AD100ABF09C /* PollfishAppSupportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D76DB4CA23DD7AD000ABF09C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = pollfish;
+				TargetAttributes = {
+					D76DB4D123DD7AD000ABF09C = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D76DB4E723DD7AD100ABF09C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D76DB4D123DD7AD000ABF09C;
+					};
+					D76DB4F223DD7AD100ABF09C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D76DB4D123DD7AD000ABF09C;
+					};
+				};
+			};
+			buildConfigurationList = D76DB4CD23DD7AD000ABF09C /* Build configuration list for PBXProject "PollfishAppSupport" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D76DB4C923DD7AD000ABF09C;
+			packageReferences = (
+			);
+			productRefGroup = D76DB4D323DD7AD000ABF09C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D76DB4D123DD7AD000ABF09C /* PollfishAppSupport */,
+				D76DB4E723DD7AD100ABF09C /* PollfishAppSupportTests */,
+				D76DB4F223DD7AD100ABF09C /* PollfishAppSupportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D76DB4D023DD7AD000ABF09C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76DB4E223DD7AD100ABF09C /* LaunchScreen.storyboard in Resources */,
+				D76DB4DF23DD7AD100ABF09C /* Assets.xcassets in Resources */,
+				D76DB4DD23DD7AD000ABF09C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76DB4E623DD7AD100ABF09C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76DB4F123DD7AD100ABF09C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D76DB4CE23DD7AD000ABF09C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76DB4DA23DD7AD000ABF09C /* ViewController.swift in Sources */,
+				D76DB4D623DD7AD000ABF09C /* AppDelegate.swift in Sources */,
+				D76DB4D823DD7AD000ABF09C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76DB4E423DD7AD100ABF09C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76DB4ED23DD7AD100ABF09C /* PollfishAppSupportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D76DB4EF23DD7AD100ABF09C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76DB4F823DD7AD100ABF09C /* PollfishAppSupportUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D76DB4EA23DD7AD100ABF09C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D76DB4D123DD7AD000ABF09C /* PollfishAppSupport */;
+			targetProxy = D76DB4E923DD7AD100ABF09C /* PBXContainerItemProxy */;
+		};
+		D76DB4F523DD7AD100ABF09C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D76DB4D123DD7AD000ABF09C /* PollfishAppSupport */;
+			targetProxy = D76DB4F423DD7AD100ABF09C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D76DB4DB23DD7AD000ABF09C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76DB4DC23DD7AD000ABF09C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D76DB4E023DD7AD100ABF09C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D76DB4E123DD7AD100ABF09C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D76DB4FA23DD7AD100ABF09C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D76DB4FB23DD7AD100ABF09C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D76DB4FD23DD7AD100ABF09C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PollfishAppSupport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishAppSupport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D76DB4FE23DD7AD100ABF09C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PollfishAppSupport/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishAppSupport;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D76DB50023DD7AD100ABF09C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PollfishAppSupportTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishAppSupportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PollfishAppSupport.app/PollfishAppSupport";
+			};
+			name = Debug;
+		};
+		D76DB50123DD7AD100ABF09C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PollfishAppSupportTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishAppSupportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PollfishAppSupport.app/PollfishAppSupport";
+			};
+			name = Release;
+		};
+		D76DB50323DD7AD100ABF09C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PollfishAppSupportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishAppSupportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PollfishAppSupport;
+			};
+			name = Debug;
+		};
+		D76DB50423DD7AD100ABF09C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PollfishAppSupportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pollfish.PollfishAppSupportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PollfishAppSupport;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D76DB4CD23DD7AD000ABF09C /* Build configuration list for PBXProject "PollfishAppSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76DB4FA23DD7AD100ABF09C /* Debug */,
+				D76DB4FB23DD7AD100ABF09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76DB4FC23DD7AD100ABF09C /* Build configuration list for PBXNativeTarget "PollfishAppSupport" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76DB4FD23DD7AD100ABF09C /* Debug */,
+				D76DB4FE23DD7AD100ABF09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76DB4FF23DD7AD100ABF09C /* Build configuration list for PBXNativeTarget "PollfishAppSupportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76DB50023DD7AD100ABF09C /* Debug */,
+				D76DB50123DD7AD100ABF09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76DB50223DD7AD100ABF09C /* Build configuration list for PBXNativeTarget "PollfishAppSupportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76DB50323DD7AD100ABF09C /* Debug */,
+				D76DB50423DD7AD100ABF09C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7FFB70823DFCEE600623BAE /* PollfishWebView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = PollfishWebView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D76DB4CA23DD7AD000ABF09C /* Project object */;
+}
