@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "PollfishWebView",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v10)],
     products: [
         .library(name: "PollfishWebView", targets: ["PollfishWebView"]),
         .library(name: "PollfishWebViewSwiftUI", targets: ["PollfishWebViewSwiftUI"]),
